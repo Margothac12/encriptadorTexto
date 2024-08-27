@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>ENCRIPTADOR</title>
+</head>
+<body>
+    <header>
+        <div>🔐</div>
+        <h2>ENCRIPTADOR</h2>
+        <button onclick="limpiar()">Limpiar</button>
+    </header>
+
+    <main>
+        <section id="encript_container">
+            <textarea name="text" id="encript_input"></textarea>
+            <div class="bts_encript">
+                <button onclick="btnEncriptar()">Encriptar</button>
+                <button onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section id="result_container">
+            <p class="result_encrypt"></p>
+            <button class="copy" onclick="copiarAlPortapapeles()">Copiar</button>
+        </section>
+    </main>
+
+    <div class="message">El texto no debe contener mayúsculas,  ni caracteres especiales</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
